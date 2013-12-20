@@ -19,6 +19,8 @@ Bundle 'Shougo/neocomplete.vim'
 Bundle 'mbbill/undotree'
 Bundle 'Townk/vim-autoclose'
 Bundle 'hughbien/md-vim'
+Bundle 'dart-lang/dart-vim-plugin'
+Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on
 
@@ -46,5 +48,10 @@ inoremap <expr><C-e> neocomplete#cancel_popup()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType go setlocal omnifunc=gocomplete#Complete
+
+set shiftwidth=4
+set tabstop=4
+set expandtab
 
 syntax on
