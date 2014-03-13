@@ -4,8 +4,7 @@ vimfiles
 my vim plugins and configuration files.
 
 
-plugins
-=======
+## Plugins
 
 * L9
 * FuzzyFinder for file/dir navigation
@@ -18,3 +17,13 @@ plugins
 * vim-fugitive for git repo management
 * vim-javascript
 * vom-colors-solarized
+
+## Installation
+
+Just clone the Vundle plugin into bundle directory:
+
+```
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+```
+
+then open your vim.
