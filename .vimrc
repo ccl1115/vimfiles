@@ -2,31 +2,30 @@ set nocompatible
 set guioptions=
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'L9'
-Bundle 'surround.vim'
-Bundle 'FuzzyFinder'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'mbbill/undotree'
-Bundle 'Townk/vim-autoclose'
-Bundle 'hughbien/md-vim'
-Bundle 'dart-lang/dart-vim-plugin'
-Bundle 'jnwhiteh/vim-golang'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'L9'
+Plugin 'surround.vim'
+Plugin 'FuzzyFinder'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'mbbill/undotree'
+Plugin 'Townk/vim-autoclose'
+Plugin 'hughbien/md-vim'
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'jnwhiteh/vim-golang'
 
+call vundle#end()
 filetype plugin indent on
 
 au BufNewFile,BufRead *.md set ft=md
-
-colorscheme solarized
 
 let g:acp_enableAtStartup = 0
 
