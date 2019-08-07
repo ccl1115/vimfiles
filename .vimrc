@@ -21,12 +21,23 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'hughbien/md-vim'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'fatih/vim-go'
+Plugin 'udalov/kotlin-vim'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 filetype plugin indent on
 
 au BufNewFile,BufRead *.md set ft=md
 autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let g:acp_enableAtStartup = 0
 
@@ -50,4 +61,4 @@ nnoremap <silent> <leader>ft :FufTag<CR>
 nnoremap <silent> <leader>fc :FufMruCmd<CR>
 
 syntax on
-colorscheme django
+colorscheme github
